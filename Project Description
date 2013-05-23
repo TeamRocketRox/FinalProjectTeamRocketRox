@@ -1,0 +1,14 @@
+C. Brown, N. Kelly, J. Lee, A. Zheng 
+May 24, 2013
+  
+  Team Rocket Rox, which consists of Christopher Brown, Nelson Kelly, Justin Lee, and Allen Zheng, are planning to 
+create a modified version of the classic Space Invaders arcade game. In Space Invaders, the player controls a spaceship that can move horizontally across the bottom portion of the screen. The player shoots at incoming enemy space ships so that they will not attack and destroy the player’s ship. The player has three barriers that he/she can hide behind and the enemy can fire at these barriers in order to destroy them.  There will be several levels, and the player will complete each level when he or she destroys all the enemy ships.  If the player is hit by an enemy bullet, the player loses a life.  Once all the player’s lives are depleted, the game is over.  The player can then restart the game by clicking on a restart button.
+	The group will be modifying this game by adding another ship to the bottom of the screen so that two players can play at once. In addition, the group will be adding a side-scrolling shooter portion of the game which will be put in place for moving from one level to another. The game will include an elaborate, tear-jerking narrative that will be explained through pictures and text.
+The objective of this game will remain virtually unchanged from the original arcade game. The player will have to defeat all of the enemy spaceships in order to progress through the game. In the side-scrolling portion, the player will be destroying and avoiding meteors in order to travel to the next level. The narrative will give the player additional incentive to complete the game.
+The target audience for this game is anyone who wants to relive the nostalgia of a classic game like Space Invaders with a friend.  It could also be for younger players who have never played the original game and want to play it with a slightly more modern twist.  
+
+Roles: 
+Project Manager: Nelson Kelly
+Coder: Chris Brown
+UI/Graphic Designer: Allen Zheng
+QA Bug Tester: Justin Lee
