@@ -1,0 +1,99 @@
+PImage pone;
+PImage ptwo;
+PImage space;
+PImage happy;
+PImage nappy;
+PImage sappy;
+PImage albert;
+int x=20;
+int y=250;
+int a=20;
+int b=500;
+float happyx=550;
+float happyy=350;
+float nappyx=600;
+float nappyy=350;
+float sappyx=650;
+float sappyy=350;
+float albertx=700;
+float alberty=350;
+
+void setup() {
+BlackBox.init(this);
+size(800, 700);
+pone= loadImage("Player 1_LEFT.png");
+ptwo= loadImage("Player 2_LEFT.png");
+space= loadImage("Star Background.jpg");
+happy= loadImage("Happy.png");
+nappy= loadImage("Nappy.png");
+sappy= loadImage("Sappy.png");
+albert= loadImage("Albert.png");
+}
+
+void draw() {
+//background
+image(space, 0, 0, width, height);
+//player 1
+image(pone, x, y, 60, 60);
+//player 2
+image(ptwo, a, b, 60, 60);
+//enemy 1
+image(happy,happyx,happyy,50,50);
+//enemy 2
+image(nappy,nappyx,nappyy,50,50);
+//enemy 3
+image(sappy,sappyx,sappyy,50,50);
+//enemy 4
+image(albert,albertx,alberty,50,50);
+//movement 1
+if (BlackBox.isKeyDown(BlackBox.VK_LEFT)) {
+  x+=-4;
+}
+if (BlackBox.isKeyDown(BlackBox.VK_RIGHT)) {
+  x+=4;
+}
+if (BlackBox.isKeyDown(BlackBox.VK_UP)) {
+  y+=-4;
+}
+if (BlackBox.isKeyDown(BlackBox.VK_DOWN)) {
+  y+=4;
+}
+//movement 2
+if (BlackBox.isKeyDown(BlackBox.VK_A)) {
+  a+=-4;
+}
+if (BlackBox.isKeyDown(BlackBox.VK_D)) {
+  a+=4;
+}
+if (BlackBox.isKeyDown(BlackBox.VK_W)) {
+  b+=-4;
+}
+if (BlackBox.isKeyDown(BlackBox.VK_S)) {
+  b+=4;
+}
+//barriers
+if (x>width-60){
+  x=width-60;
+}
+if (x<0){
+  x=0;
+}
+if (y>height-60){
+  y=height-60;
+}
+if (y<0){
+  y=0;
+}
+if (a>width-60){
+  a=width-60;
+}
+if (a<0){
+  a=0;
+}
+if (b>height-60){
+  b=height-60;
+}
+if (b<0){
+  b=0;
+}
+}
